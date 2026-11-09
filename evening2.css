@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&family=Science+Gothic:wght@100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-0: #260d33;
+  --color-1: #2e183b;
+  --color-2: #312750;
+  --color-3: #554685;  
+  --color-4: #8f5483;
+  --color-5: #d87e94;
+  --color-6: #e8afbf;
+  --color-7: #ffffff;
+  
+  --transparent-color-1: rgba(46, 24, 59, 0.4);
+  --transparent-color-2: rgba(85, 70, 133, 0.4);
+  --transparent-color-3: rgba(232, 175, 191, 0.4);
+  
+  --font-1: 'Tourney', sans-serif;
+  --font-2: 'Science Gothic', sans-serif;
+  --font-3: 'Edu SA Beginner', sans-serif;
+}
+
+body {
+  background: url(https://cdn.pixabay.com/photo/2020/11/08/12/27/stairs-5723586_1280.jpg) fixed;
+  background-size: cover;
+}
+
+
+/*topbar*/
+.container.topbar {
+  color: var(--color-6);
+  background: var(--color-1);
+  border-radius: 15px;
+  font-family: var(--font-2);
+  font-size: 14px;
+  font-weight: 300;
+  border: 5px solid var(--color-0);
+}
+
+.container.topbar a {
+  color: var(--color-5);
+  font-weight: 500;
+}
+
+.container.topbar a:hover {
+  filter: drop-shadow(4px 4px 4px var(--color-4));
+  background: transparent;
+  color: var(--color-5);
+}
+
+.badge {
+    background: var(--color-4);
+    color: var(--color-6);
+}
+
+/*main*/
+.container.main {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+/*navbar*/
+nav.navbar.navbar-default {
+  background: var(--color-1);
+  border: 5px solid var(--color-0);
+}
+
+nav.navbar.navbar-default a {
+  color: var(--color-5);
+  font-family: var(--font-2);
+  font-size: small;
+}
+
+nav.navbar.navbar-default a:hover {
+  filter: drop-shadow(4px 4px 4px var(--color-4));
+  background: transparent;
+  color: var(--color-5);
+}
+
+a.navbar-brand.visible-lg.visible-md img {
+  filter: saturate(0.8) brightness(65%) hue-rotate(282deg);
+}
+
+/*page*/
+.col-md-9 {
+  background: var(--transparent-color-1);
+  min-height: 800px;
+  padding-top: 25px;
+  font-family: var(--font-3);
+  font-size: medium;
+}
+
+/*breadcrumb*/
+ol.breadcrumb {
+  background: var(--color-1);
+  border-radius: 10px;
+}
+ol.breadcrumb a {
+  color: var(--color-6);
+  font-family: var(--font-2);
+  font-size: smaller;
+}
+ol.breadcrumb a:hover {
+  filter: drop-shadow(2px 4px 6px var(--color-6));
+}
+
+li.breadcrumb-item.active {
+  color: var(--color-5);
+  font-size: medium;
+  font-weight: 500;
+}
+
+input.floatright {
+  color: var(--color-5);
+  text-shadow: none;
+  background: var(--color-3);
+  border: 3px solid var(--color-0);
+  border-radius: 10px;
+}
+
+input.floatright:hover {
+  color: var(--color-4);
+  text-shadow: none;
+  background: var(--transparent-color-2);
+  border: 2px solid var(--color-4);
+  border-radius: 10px;
+  margin: 2px;
+}
+
+/*alerts*/
+.alert.alert-success {
+  color: var(--color-0);
+  background: var(--transparent-color-3);
+  border: 3px solid var(--transparent-color-1);
+}
+
+.alert-danger {
+    color: var(--color-6);
+    background: var(--transparent-color-2);
+    border: 3px solid var(--transparent-color-1);
+}
+
+.alert a {
+    color: var(--color-5) !important;
+}
+
+/*right and left arrow*/
+.floatleft img {
+  filter: saturate(0.8) brightness(65%) hue-rotate(234deg);
+}
+
+.floatright img {
+  filter: saturate(0.8) brightness(65%) hue-rotate(234deg);
+}
+
+/*cave owner*/
+.center {
+  color: var(--color-6);
+}
+
+.center small {
+  color: var(--color-5);
+}
+
+/*works with almost all links that have the class .center*/
+.center a {
+  color: var(--color-5);
+}
+.center a:hover {
+  filter: drop-shadow(2px 4px 6px var(--color-5));
+}
+
+
+/*lion */
+.featured-lion {
+  background: var(--color-1);
+  border: 5px solid var(--color-0);
+  border-radius: 20px;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 640px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.featured-lion a {
+  color: var(--color-5) !important;
+}
+/*Lion background image*/
+.lionImage.featured-lion img:nth-child(1) {
+  content: url(https://static.lioden.com/images/dynamic/backgrounds/thenav.png);
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/*table pride*/
+table#pride {
+  color: var(--color-6);
+  border: 5px solid var(--color-0);
+  background: var(--transparent-color-2);
+}
+
+table#pride th {
+  background: var(--color-0);
+}
+
+table#pride a {
+  color: var(--color-5);
+}
+
+table#pride a:hover {
+  filter: drop-shadow(2px 4px 6px var(--color-5));
+}
+
+td.left.b {
+  background: var(--color-0);
+}
+
+td.right_odd {
+  background: var(--transparent-color-1) !important;
+}
+
+td.bottom {
+  background: var(--color-0) !important;
+}
+
+td.bottom button {
+  background: var(--color-3);
+  color: var(--color-5);
+  text-shadow: none;
+  font-size: smaller;
+}
+
+select {
+    background: var(--color-6);
+    color: var(--color-4) !important;
+    border: 2px solid var(--color-4);
+    border-radius: 5px;
+}
+
+/*cave statistic*/
+table.table.auto {
+  color: var(--color-5);
+  background: var(--transparent-color-1);
+}
+td.top {
+  background: var(--color-0) !important;
+  color: var(--color-6) !important;
+}
+
+table.table.auto th {
+  color: var(--color-6);
+  background: var(--color-0);
+}
+
+table.table.auto th a {
+    color: var(--color-4);
+}
+
+input {
+    background: var(--transparent-color-3);
+    border: var(--color-2) 2px solid;
+}
+
+textarea {
+    background: var(--transparent-color-3);
+    border: var(--color-2) 2px solid;
+    color: var(--color-6);
+    scrollbar-color: var(--color-4) var(--color-1);
+}
+
+/*Sidebar*/
+div#pageSidebar {
+  background: var(--color-1);
+  border: 5px solid var(--color-0);
+  border-top: none;
+  color: var(--color-4);
+}
+
+.panel {
+  background: none !important;
+  border: 3px solid var(--color-4) !important;
+  box-shadow: none !important;
+}
+
+div#pageSidebar a {
+  color: var(--color-5);
+}
+
+div#pageSidebar h3 {
+  color: var(--color-6);
+}
+
+/*progress*/
+.progress {
+  background: var(--transparent-color-3);
+  box-shadow: none;
+}
+
+.progress-bar {
+  background: var(--color-2);
+}
+
+.progress div {
+  color: var(--color-6) !important;
+}
+
+/*other*/
+.col-md-12.col-xs-12 input {
+  color: var(--color-4);
+  background: var(--color-1);
+  border: 2px solid var(--color-4) !important;
+  text-shadow: none;
+}
+
+a.btn.btn-default.button {
+  color: var(--color-4);
+  background: var(--color-1);
+  border: 2px solid var(--color-4) !important;
+  text-shadow: none;
+}
+
+.col-xs-2.text-right img {
+        filter: sepia(10%) hue-rotate(278deg) saturate(900%);
+}
+
+/*blocks*/
+.container-block-main {
+  color: var(--color-6);
+  height: 800px;
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 3px;
+  font-family: var(--font-2);
+  font-size: small;
+}
+
+.block-main {
+  display: block;
+  overflow: auto;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: var(--transparent-color-1);
+  border: 5px solid var(--color-0);
+  border-radius: 10px;
+  text-align: center;
+  scrollbar-color: var(--color-4) var(--color-2);
+  line-height: 1;
+}
+
+.block1-info {
+  grid-column: 1 / 3;
+  grid-row: 1 / 5;
+}
+
+.block2-info {
+  grid-column: 3 / 6;
+  grid-row: 1 / 3;
+}
+
+.block3-info {
+  grid-column: 3 / 6;
+  grid-row: 3 / 5;
+}
+
+.block-main-header font {
+  color: var(--color-5) !important;
+  font-size: x-large !important;
+}
+
+.block-lion-card {
+  display: block;
+  width: 98%;
+  height: auto;
+  margin: 2px;
+  border: 3px solid var(--color-4);
+  border-radius: 10px;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+.block-lion-card img {
+  width: 100%;
+  height: auto;
+}
+
+.lion-card-name {
+  font-size: larger;
+}
+
+
+/*?credits*/
+.breadcrumb::after {
+  content: "CSS by Polaris Penumbra (#419566)";
+  position: absolute;
+  right: 20%;
+  z-index: 100;
+  color: var(--color-5);
+}
